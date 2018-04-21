@@ -1,4 +1,10 @@
 # Assembler
+
+* A pure assembly language is a language in which each statement
+produces exactly one machine instruction.
+* There is a one-to-one correspondence between machine
+instructions and statements in the assembly program.
+
 The assembler converts assembly language instruction into the
 machine language equivalent.
 * The assembler can also treat common variations of machine
