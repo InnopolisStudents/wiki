@@ -11,3 +11,9 @@ There are two key properties:
    * Program counter (instruction pointer) identifies the current instruction.
    * Program counter is advanced sequentially except for control transfer
 instructions
+
+##### Examples
+All major instruction set architectures today use The
+Von-Neumann Model (with minor variations, such as separate
+instruction and data caches, and multi-core clusters). For
+example: x86, ARM, MIPS, SPARC, Alpha, POWER,
