@@ -31,9 +31,3 @@ architecture.
 * Hardware
   * Processor, memory, I/O controllers
   
-##Translation hierarchy
-[Translation hierarchy picture][translation_hierarchy]
-
-
-[translation_hierarchy]: ../images/translation_hierarchy.png
-
