@@ -1,3 +1,10 @@
+# Assembly Language
+
+* A pure assembly language is a language in which each statement
+produces exactly one machine instruction.
+* There is a one-to-one correspondence between machine
+instructions and statements in the assembly program.
+
 * To command a computer, you must understand its language
    * Instructions: words in a computer’s language
    * Instruction set: the vocabulary of a computer’s language
