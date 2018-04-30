@@ -10,19 +10,19 @@ Example of 3 to 8 decoder:
 Example with gates:
 ![picture of decoder with gates][decoder gates]
 
-##Multiplexors
-A multiplexor is a logic block that has 2<sup>n</sup> bit input and n-bit selector
+##multiplexers
+A multiplexer is a logic block that has 2<sup>n</sup> bit input and n-bit selector
 and 1 output which is one of the n inputs based on the selector value 
  
 A selector value (or control value) is the control signal
-that is used to select one of the input values of a multiplexor as
-the output of the multiplexor.
+that is used to select one of the input values of a multiplexer as
+the output of the multiplexer.
 
-Basically, multiplexors select which value will go through, all others are blocked.
+Basically, multiplexers select which value will go through, all others are blocked.
 
-Example of two-input multiplexor on the left and its implementation with
+Example of two-input multiplexer on the left and its implementation with
 gates on the right:
-![picture of multiplexor][multiplexor]
+![picture of multiplexer][multiplexer]
 
 
 ##Programmable Logic Array
@@ -40,7 +40,7 @@ PLA is currently not used because they are not fast enough, consumes a lot of vo
 
 
 [PLA]: ./images/pla.png
-[multiplexor]: ./images/multiplexor_example.png
+[multiplexer]: images/multiplexer_example.png
 [decoder]: ./images/decoder.png
 [decoder_truth_table]: ./images/decoder_truth_table.png
 [decoder gates]: ./images/decoder_gates.png
