@@ -1,18 +1,18 @@
-#Control Unit
+# Control Unit
 
 Control Unit is the core of the sequencing of operations
 * Picks the new operation to be executed
 * Decodes it
 * Coordinates its execution
 
-##CPU chips
+## CPU chips
 
 The logical pinout of a generic CPU. The arrows indicate input
 signals and output signals. The short diagonal lines indicate that
 multiple pins are used.
 ![picture of pinouts][cpu_pinout]
 
-###Type of pins
+### Type of pins
 These are the different types of pins that will be found on a CPU
 
 1. <b>Address and Data pins</b>: Sometimes an address line and a data

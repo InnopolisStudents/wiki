@@ -1,4 +1,4 @@
-#Nine Great Ideas
+# Nine Great Ideas
 1. Design for Moore’s Law
 2. Use abstraction to simplify design
 3. Make the common case fast

@@ -1,9 +1,9 @@
-#Arithmetic operations on numbers
+# Arithmetic operations on numbers
 
-##Summation
+## Summation
 
-###Integer
-####General summation
+### Integer
+#### General summation
 Sum in binary notation is performed bit by bit carrying the rest to
 next digit
 
@@ -15,7 +15,7 @@ next digit
 
 1+1=0 and carry 1
 
-######Example
+###### Example
 ![picture of the example][simple_summation_example]
 
 
@@ -31,15 +31,15 @@ one we have an ERROR
 The sum 100 + 100 using 2 bit representation:
 ![picture of the example][2sC_summation_example_with_overflow]
 
-###Floating point
+### Floating point
 
-####Summation
+#### Summation
 
 To sum (or subtract) floating point numbers it is necessary to
 scale mantissa to have the same exponents in all terms
 
 ![summation example][floating_point_summation_example]
-####Multiplication
+#### Multiplication
 
 Multiply mantissa and sum exponents
 
@@ -47,7 +47,7 @@ If necessary mantissa is scaled and exponent is
 incremented/decremented
 
 ![multiplication example][floating_point_multiplication_example]
-###Saturation Arithmetic
+### Saturation Arithmetic
 It is a version of arithmetic in which all operations such as
 addition and multiplication are limited to a fixed range between a
 minimum and maximum value.
@@ -65,7 +65,7 @@ For example:
 and saturation causes significantly less distortion to the sound than
 wrap-around.
 
-######Example of arithmetics
+###### Example of arithmetics
 If the range is from -100 to 100
 
 60 + 30 = 90
@@ -77,7 +77,6 @@ If the range is from -100 to 100
 99 × 99 = 100
 
 30 × (5 − 1) = 100
-
 
 
 

@@ -1,4 +1,4 @@
-#Boolean Algebra
+# Boolean Algebra
 All arithmetic operations performed with Boolean quantities have
 one of two possible outcomes: either 1 or 0.
 
@@ -13,7 +13,7 @@ low = 0 = deasserted = inactive = false
 Often a non-zero value is considered to “be evaluated” to true (but
 still true is represented by 1)
 
-#####Addition
+##### Addition
 Boolean algebra by adding two numbers together
 
 |Addition|
@@ -27,13 +27,13 @@ Boolean addition corresponds to the logical function of an “OR”
 gate, as well as to parallel switch contacts.
 ![picture of addition][boolean_function_addition]
 
-#####Subtraction
+##### Subtraction
 There is no such thing as subtraction in the realm
 of Boolean mathematics. Subtraction implies the existence of
 negative numbers: 5 - 3 is the same thing as 5 + (-3), and in
 Boolean algebra negative quantities are forbidden.
 
-#####Multiplication
+##### Multiplication
 It is the same as in real-number algebra: anything multiplied by 0 is 0,
 and anything multiplied by 1 remains unchanged:
 
@@ -48,7 +48,7 @@ Boolean multiplication corresponds to the logical function of an
 “AND” gate, as well as to series switch contacts:
 ![picture of multiplication][boolean_function_multiplication]
 
-#####Complement
+##### Complement
  Boolean notation uses a bar above the
 variable character to denote complementation.
 
@@ -57,7 +57,7 @@ If A = 0 then ¬A = 1 (and vice versa)
 Boolean complementation finds equivalency in the form of the
 NOT gate, or a normally-closed switch or relay contact.
 ![picture of complement][boolean_function_complement]
-#####Division
+##### Division
 There is no such thing as division in Boolean
 mathematics, either, since division is really nothing more than
 compounded subtraction, in the same way that multiplication is
@@ -65,7 +65,7 @@ compounded addition.
 
 ## Truth Table
 Boolean functions can be fully computed using a truth table
-######Example
+###### Example
 f = a * b * c
 
 |a|b|c|f|
@@ -79,10 +79,10 @@ f = a * b * c
 |1|1|0|0|
 |1|1|1|1|
 
-##Boolean algebra laws
+## Boolean algebra laws
 ![table of boolean algebra laws][boolean_algebra_laws]
 
-##General theorem
+## General theorem
 Any logical function can be constructed:
  * using AND gates and inverter
  * using OR gates and inverter

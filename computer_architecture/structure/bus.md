@@ -13,7 +13,7 @@ bus works
 
 A computer system with multiple buses:
 ![picture of this computer system][computer_system_with_buses]
-##Concept of slaves and masters
+## Concept of slaves and masters
 Active devices attached to the bus that can initiate bus transfers
 are called masters
 
@@ -32,7 +32,7 @@ Memory can never be a master device.
 |I/O Device|Memory| DMA (Direct Memory Access)
 |Coprocessor|CPU| Coprocessor fetching operands from processor
 
-##Address Lines
+## Address Lines
 The more address lines a bus has, the more memory the CPU can
 address directly.
 
@@ -66,7 +66,7 @@ For Example: modern AXI bus
 transfer to memory the whole cache line.
 * On-chip buses can be very wide - 256 bits or wider
 
-##Bus synchronization
+## Bus synchronization
 Buses can be divided up into two categories, depending on their
 synchronization:
 1. Synchronous bus
@@ -114,7 +114,7 @@ slowest (“legacy”) devices on the bus.
 
 <b>The system goes at the speed of the slowest device.</b>
 
-###Asynchronous bus
+### Asynchronous bus
 
 In asynchronous bus there are additional signals:
 1. MSYN: Master SYNchronization
@@ -144,7 +144,7 @@ The essential operation consists of four events:
 A set of signals that interlocks in this way is called a full
 handshake
 
-######Conclusion
+###### Conclusion
 Despite the advantages of asynchronous buses, most buses are
 synchronous since it is easier to build a synchronous system.
 
@@ -152,7 +152,7 @@ The CPU just asserts its signals, and the memory just reacts.
  * There is no feedback (cause and effect), but if the components have
 been chosen properly, everything will work without handshaking.
 
-######Buses example
+###### Buses example
 On-chip Buses
 * Advanced eXtensible Interface (AXI) Bus: Used to connect
 CPU core with GPU and L2 cache

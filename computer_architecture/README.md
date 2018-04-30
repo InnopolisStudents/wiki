@@ -8,7 +8,7 @@ The science and the art of **designing**, selecting, and interconnecting
 **hardware components** and designing the hardware/software **interface**
 to create a computing system that meets function, performance, energy consumption
 
-##Why is architecture important?
+## Why is architecture important?
 * For the world
    * Computer architecture provides the engines that power all of
 computing
@@ -49,7 +49,7 @@ architecture.
 * Microarchitecture
    * How to implement an architecture in hardware
 
-##5 components of any Computer
+## 5 components of any Computer
 ![picture of the components][5_components_of_the_computer]
 
 

@@ -18,7 +18,7 @@ MIPS has a 32 × 32-bit register file, that a numbered from 0 to 31
 
 Any 32-bit data is called a “word”
 
-######Example
+###### Example
 C code
 ```C
 f = (g + h) − (i + j);
@@ -32,7 +32,7 @@ add $t1, $s3, $s4# t1=i+j
 sub $s0, $t0, $t1# s0=f
 ```
 
-##Memory Operands
+## Memory Operands
 Main memory used for composite data
  * Arrays, structures, dynamic data
 
@@ -52,7 +52,7 @@ MIPS architecture processors can be configured to run either in
 big or in little endian mode.
 * Big Endian: Least significant byte has highest address
 * Little Endian: Least significant byte has lowest address
-######Example
+###### Example
 Word x value 0x01234567, with address &x is 0x100
 
 Big Endian
@@ -66,7 +66,8 @@ Little Endian
 |0x100 |0x101| 0x102| 0x103
 |:---:|:---:|:---:|:---:|
 |67|45|23|01|
-######Another example
+
+###### Another example
 
 C code
 ```C
@@ -82,7 +83,7 @@ add $s1, $s2, $t0
 Index 8 requires offset of 32. This is because in MIPS, words must start at addresses that are multiples of 4. This requirement is called an alignment restriction.
 Alignment leads to faster data transfers
 
-###Registers vs Memory
+### Registers vs Memory
 Registers are faster to access than memory
 * Operating on memory data requires loads and stores which lead to more instructions to be executed
 
@@ -90,7 +91,7 @@ Compiler must use registers for variables as much as possible
 * Only spill to memory for less frequently used variables
 * Register optimization is important
 
-##Immediate operands
+## Immediate operands
 Constant data specified in an instruction
 ```mips
 addi $s3, $s3, 4
@@ -105,13 +106,13 @@ For Example: move between registers
 ```mips
 add $s2, $s1, $zero
 ```
-##Representing Instructions
+## Representing Instructions
 Instructions are encoded in binary called machine code. In particular, MIPS instructions are encoded as 32-bit instruction words
 
-##MIPS register names and conventions
+## MIPS register names and conventions
 ![picture of registers][mips_register_name]
 
-##MIPS R-format instructions
+## MIPS R-format instructions
 |op|rs|rt|rd|shamt|funct|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |6 bits|5 bits|5 bits|5 bits|5 bits|6 bits|
@@ -125,7 +126,7 @@ Instruction fields
 * funct: function code (extends opcode)
 
 
-######Encoding example
+###### Encoding example
 ```mips
 add $t0, $s1, $s2
 ```
@@ -136,10 +137,10 @@ add $t0, $s1, $s2
 Final encoded instruction: 00000010001100100100000000100000<sub>2</sub> = 02324020<sub>6</sub>
 
 
-###Logical operations
+### Logical operations
 Instructions for bitwise manipulation:
 ![picture of instructions][logical_operations]
-####Shifts
+#### Shifts
 Shift left logical
 * Shift left and fill with 0 bits
 * sll by i bits multiplies by 2<sup>i</sup>
@@ -152,7 +153,7 @@ Shift arithmetical
 * Left shift close to be identical (except exceptions)
 * Shift right different in sign bit which is used as filler (sra operation)
 
-######Examples
+###### Examples
 Shift left logical
 
 * Original pattern 10100111
@@ -179,8 +180,8 @@ srl d, s, shft
 # for arithmetic use sra
 # in this case sign at the msb is extended 
 ```
-####Others
-######Example of and operation
+#### Others
+###### Example of and operation
 ```mips
 and $t0, $t1, $t2
 ```
@@ -188,7 +189,7 @@ and $t0, $t1, $t2
 * $t1 0000 0000 0000 0000 0011 1100 0000 0000
 * $t0 0000 0000 0000 0000 0000 1100 0000 0000
 
-######Example of or operation
+###### Example of or operation
 ```mips
 or $t0, $t1, $t2
 ```
@@ -196,15 +197,15 @@ $t2 0000 0000 0000 0000 0000 1101 1100 0000
 $t1 0000 0000 0000 0000 0011 1100 0000 0000
 $t0 0000 0000 0000 0000 0011 1101 1100 0000
 
-######Not
+###### Not
 Just inverts every 1 to 0 and every 0 to 1
-######Example of nor operation
+###### Example of nor operation
 ```mips
 nor $t0, $t1, $zero
 ```
 $t1 0000 0000 0000 0000 0011 1100 0000 0000
 $t0 1111 1111 1111 1111 1100 0011 1111 1111
-##MIPS I-format instructions
+## MIPS I-format instructions
 |op|rs|rt|address or constant|
 |:---:|:---:|:---:|:---:|
 |6 bits|5 bits|5 bits|16 bits|
@@ -217,7 +218,7 @@ Instuctions fields
 * Address: offset added to base address in rs
 
 
-##MIPS J-format instructions
+## MIPS J-format instructions
 |op|address|
 |:---:|:---:|
 |6 bits|26 bits|
@@ -229,7 +230,7 @@ with the 26 bits of the direct address from the instruction,
 concatenated with two bits of 00
 
 
-##Making decisions
+## Making decisions
 
 Branch to a labeled instruction if a condition is true, otherwise, continue sequentially
 
@@ -250,7 +251,7 @@ program memory
 * Target address = PC + offset × 4
 * PC already incremented by 4 by this time
 
-######Example
+###### Example
 C Code
 ```c
 if ( i == j )

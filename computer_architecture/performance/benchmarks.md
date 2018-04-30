@@ -1,10 +1,10 @@
 # Benchmarks
 
-#####Performance best determined by running a real application
+##### Performance best determined by running a real application
 * Use programs typical of expected workload
 * Or, typical of expected class of applications. e.g., compilers/editors,
 scientific applications, graphics, etc.
-#####Small benchmarks
+##### Small benchmarks
 * Nice for architects and designers
 * Easy to standardize
 * Can be abused

@@ -1,7 +1,7 @@
-##Simplicity favours regularity
+## Simplicity favours regularity
 * Regularity makes implementation simpler
 * Simplicity enables higher performance at lower cost
-##Smaller is faster
+## Smaller is faster
 * Main memory: millions of locations while in MIPS just 32 registers
 ## Make the common case fast
 * Small constants are common

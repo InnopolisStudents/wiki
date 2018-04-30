@@ -1,4 +1,4 @@
-#Building blocks
+# Building blocks of the hardware
 
-Combinational logic = no memory elements
-Sequential logic = memory elements
+[Combinational logic](./combinational_logic.md) = no memory elements
+[Sequential logic](./sequential_logic.md) = memory elements

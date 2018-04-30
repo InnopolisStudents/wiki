@@ -13,7 +13,7 @@ The first modern electronic ternary computer Setun was built in
 1958 in the Soviet Union at the Moscow State University by
 Nikolay Brusentsov.
 
-###Problems
+### Problems
  1. It is much harder to build components that use more than two
 states.
  2. If you use more than two states you need to be compatible to

@@ -44,16 +44,16 @@ These two steps do not occur simultaneously. The second step does not begin unti
 
 In interpretation, there is only one step: executing the original
 source program.
-###Types of Translators
+### Types of Translators
 
-####Assembler
+#### Assembler
 
 When the source language is essentially a symbolic representation
 for a numerical machine language, the translator is called an
 assembler and the source language is called an assembly
 language.
 
-####Compiler
+#### Compiler
 
 When the source language is a high-level language such as Java or
 C and the target language is either a numerical machine language
@@ -101,7 +101,7 @@ It also takes much longer to debug and is much harder to maintain.
 However, there are two reasons for using assembly language:
 performance and access to the machine.
 
-###Performance
+### Performance
 
 An expert assembly language programmer can often produce code
 that is much smaller and much faster than a high-level language
@@ -110,7 +110,7 @@ programmer can.
 For some applications, speed and size are critical. For example,
 smart cards, embedded applications, device drivers etc.
 
-###Access to the machine
+### Access to the machine
 
 Some procedures need complete access to the hardware, something
 usually impossible in high-level languages.

@@ -1,6 +1,6 @@
-#Sequential Logic
+# Sequential Logic
 
-##State element
+## State element
 A memory element that contains a value, the state
 of the element.
 
@@ -14,11 +14,11 @@ element, and the outputs are written into a state element.
 
 Edge-triggered methodology is a clocking scheme in which all state changes occur on a clock edge.
 
-##Latch
+## Latch
 Latch is a circuit used to store information.
 It can retain an input signal until reset by another signal
 
-###SR Latch
+### SR Latch
 ![symbol of rs latch][rs_latch_symbol]
 
 SR is for Set-Reset
@@ -39,7 +39,7 @@ R=S=1, then Q=0 and not Q=0. <b>Invalid State</b>
 ![picture of second two cases][sr_latch_second_cases]
 
 
-###D Latch
+### D Latch
 ![symbol of D latch][d_latch_symbol]
 
 Improvement over SR Latch, that removes invalid state and adds clock input
@@ -54,13 +54,13 @@ When CLK = 1, D passes through to Q
 
 When CLK = 0, Q holds its previous value
 
-##Flip Flops
+## Flip Flops
 Flip flops are fundamental building blocks of digital electronics
 systems.
 
 A flip flop stores a single bit (binary digit) of data.
 
-###D Flip Flop
+### D Flip Flop
 ![symbol of d flip flop][d_flip_flop_symbol]
 
 Constructed from two cascaded D-latches, called the
@@ -79,7 +79,7 @@ state is propagated to the output Q
 Otherwise, Q holds its previous value
 Q changes only on rising edge of CLK and therefore called edge-triggered
 
-###Enabled Flip Flop
+### Enabled Flip Flop
 ![picture of enabled flip flop][enabled_flip_flop]
 
 A D Flip Flop with additional input (EN) that control when new data (D) is stored
@@ -89,7 +89,7 @@ So if
 
 It enables signal to change the state of a flip-flop only at desired times and limits the power consumption. 
 
-###Resettable Flip Flop
+### Resettable Flip Flop
 ![picture of resettable flip flop][resettable_flip_flop_symbol]
 
 A D Flip Flop with additional input (Reset) that forces internal value to 0
@@ -98,14 +98,14 @@ A D Flip Flop with additional input (Reset) that forces internal value to 0
 
 ![picture of resettable flip flop][resettable_flip_flop]
 
-###Settable Flip Flop
+### Settable Flip Flop
 ![picture of settable flip flop][settable_flip_flop]
 
 A D Flip Flop with additional input (Setet) that forces internal value to 1
 * Set = 1: Q is set to 1
 * Set = 0: flip-flop behaves as ordinary D flip-flop
 
-##Latches vs Flip Flops
+## Latches vs Flip Flops
 Latches
  * Latches are building blocks of sequential circuits and these can be build from logic gates
  * Latch is level-sensitive. It change the value as input change.
@@ -115,11 +115,11 @@ can be build from the latches
  * Flip Flop is edge-sensitive and only changes
 state when a control signal goes from high to low or low to high
 
-##Registers
+## Registers
 An 8-bit register can be constructed from 8 single-bit flip-flops.
 ![picture of 8 bit register][8_bit_register]
 
-##Register Files
+## Register Files
 Register file is, basically, an array of registers. It consists of a set of registers that can be read and
 written by supplying a register number to be accessed.
 

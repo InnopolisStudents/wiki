@@ -28,7 +28,7 @@ That is number with a finite numbers of digits. Because of this property several
 * Distributive and associative properties
 * Holes in the representation of real numbers
 
-####Examples
+#### Examples
 Let's consider rational numbers numbers with two decimal
 digit after the comma
 
@@ -56,7 +56,7 @@ n - 1 bits are used for magnitude
 
 Represented interval: Represented interval: [-2<sup>n-1</sup>+1, 2<sup>n-1</sup>-1]
 
-######Examples
+###### Examples
 
 Using n=4 interval [-7, 7] is completely represented
 
@@ -77,7 +77,7 @@ n-1 bits are used for the magnitude
 
 Represented interval: [-2<sup>n-1</sup>+1, 2<sup>n-1</sup>-1]
 
-######Example
+###### Example
 Using n=4 interval [-7, 7] is completely represented
 
 5 0101
@@ -97,7 +97,7 @@ n-1 bits are used for the magnitude
 
 Represented interval:[-2<sup>n-1</sup>, 2<sup>n-1</sup>-1]
 
-######Example
+###### Example
 Using n=4 interval [-8, 7] is completely represented
 
 5 0101
@@ -117,7 +117,7 @@ Represented interval: [-2<sup>n−1</sup> , 2<sup>n−1</sup>-1]
 Practical rule: numerals are obtained by complementing the highest
 digit in 2’s complement notation
 
-######Example
+###### Example
 Using n=4 interval [-8, 7] excess = 2<sup>n−1</sup> = 2<sup>3</sup> = 8
 
 5 5+8 = 13 → 1101
@@ -126,8 +126,8 @@ Using n=4 interval [-8, 7] excess = 2<sup>n−1</sup> = 2<sup>3</sup> = 8
 
 Note that here we <b>don't</b> lose any number: 0 has only one representation (1000)
 
-##Floating point representation
-######Example in base 10
+## Floating point representation
+###### Example in base 10
 Using numerals with 5 digits of the kind ± .XXX ±EE
 
 Mantissa = ± .XXX three signed digits 0.1 ≤ m < 1
@@ -140,7 +140,7 @@ Represented numbers are:
 Represented interval is
 -.999·10<sup>-99</sup> ≤ N ≤ -.001·10 <sup>-99</sup>; .001·10<sup>99</sup> ≤ N ≤ .999·10<sup>99</sup>
 
-###IEEE 754 Standard 
+### IEEE 754 Standard 
 Simple precision (uses 32 bits to represent sign, exponent and mantissa)
 
 Note that exponent is written in excess notation

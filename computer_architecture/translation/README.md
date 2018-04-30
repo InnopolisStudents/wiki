@@ -1,4 +1,4 @@
-##Translation hierarchy
+## Translation hierarchy
 [Translation hierarchy picture][translation_hierarchy]
 
 
