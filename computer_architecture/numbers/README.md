@@ -134,11 +134,6 @@ Mantissa = ± .XXX three signed digits 0.1 ≤ m < 1
 
 Exponent = ±EE two signed digits -99 ≤ e ≤ 99
 
-Bias = 127 (single precision) or 1023 (double precision)
-
-So, standart representation will be: 
-`(1)^s * (1 + Mantissa) * 2^(Exponent - Bias)`
-
 Represented numbers are:
 ![represented numbers][floating_point_number_representations_base_10]
 
@@ -168,6 +163,11 @@ There are notation using normalized mantissa or not
 
 Some configurations of the exponent are reserved (i.e. not
 standardized)
+
+#### Standart representation: 
+Bias = 127 (single precision) or 1023 (double precision)
+ 
+`(1)^s * (1 + Mantissa) * 2^(Exponent - Bias)`
 
 
 [example_of_positional_number_representation]: ./images/example_of_positional_number_representation.png
