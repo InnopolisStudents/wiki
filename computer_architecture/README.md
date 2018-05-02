@@ -19,7 +19,7 @@ understanding how computers work is essential
    * Many performance (and efficiency) problems have their roots in
 architecture.
 
-## Topics
+## Topics in English
 1. [Assembler](./assembler)
 2. [Building block of the hardware](./building_blocks)
 3. [Hardware description language](./hdl)
@@ -28,6 +28,10 @@ architecture.
 6. [Process of translation](./translation)
 7. [Number systems](./numbers)
 8. [Various topics](./content)
+
+## Topics in Russian
+1. [4 chapter](https://drive.google.com/drive/folders/151UsXp0ee2au9xLqqO2A7PKsnx0JLhUk?usp=sharing)
+
 
 ### Problem Solution stack in the modern world
 ||
