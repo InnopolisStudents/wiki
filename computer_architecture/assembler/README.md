@@ -78,7 +78,7 @@ numerical values of the addresses. As a consequence, no one
 programs in machine language today, although people did so
 decades ago, before assemblers had been invented.
 
-##Assembler vs High-level Languages
+## Assembler vs High-level Languages
 The assembly programmer has access to all the features and
 instructions available on the target machine. The high-level
 language programmer does not.
